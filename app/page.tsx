@@ -1,101 +1,51 @@
-import Image from "next/image";
-
+import Header from "@/components/header"
+import Card from "@/components/card"
+import Recommededcars from "@/components/recommededcars"
+import Footer from "@/components/footer"
+import Image from "next/image"
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+    <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+    <div className="w-full flex justify-around items-center gap-4 p-4 md:p-12">
+      <div className="w-full md:w-1/2 bg-[#54A6FF] h-auto md:h-96">
+      <div className="w-full md:w-3/4 text-white px-6 md:px-14 pt-6 md:pt-14 pb-0">
+      <h2 className="font-bold text-2xl md:text-[32px] leading-[48px]">The Best Platform for Car Rental</h2>
+      <p className="font-medium leading-6">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+      <button className="bg-[#3563E9] mt-4 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+              Rental Car
+            </button>
+
+      </div>
+            <Image src={"/images/hero-1.svg"} alt="Car1" width={100} height={100} className="w-96 m-auto mt-4 md:mt-0"/>
+      </div>
+      <div className="w-full md:w-1/2 bg-[#3563E9] hidden md:block h-96">
+      <div className="w-full md:w-3/4 text-white p-14 pb-0">
+      <h2 className="font-bold text-[32px] leading-[48px]">Easy way to rent a car at a low price</h2>
+      <p className="font-medium leading-6">Providing cheap car rental services and safe and comfortable facilities.</p>
+      <button className="bg-[#54A6FF] mt-4 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+              Rental Car
+            </button>
+
+      </div>
+            <Image src={"/images/hero-2.svg"} alt="Car2" width={100} height={100} className="w-96 m-auto"/>
+      </div>    </div>
+
+
+      <div className="w-full px-6 flex justify-between items-center mb-6">
+          <h2 className="text-2xl font-bold text-gray-400">Popular Cars</h2>
+          <button className="text-blue-500 hover:underline">View All</button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+<Card />
+
+          <h2 className="text-2xl px-6 font-bold text-gray-400">Recommended Cars</h2>
+        
+
+<Recommededcars />
+    <Footer />
+
+    </>
   );
 }
