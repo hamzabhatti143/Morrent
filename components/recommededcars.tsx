@@ -285,7 +285,7 @@ const recommededcars = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/4 p-8 ">
+        <div className="w-full md:w-1/4 p-8 bg-white">
           <div className="flex justify-between items-center">
             <div>
               <h2>New MG ZS</h2>

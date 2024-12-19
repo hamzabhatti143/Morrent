@@ -3,6 +3,7 @@ import Card from "@/components/card"
 import Recommededcars from "@/components/recommededcars"
 import Footer from "@/components/footer"
 import Image from "next/image"
+import Link from "next/link"
 export default function Home() {
   return (
     <>
@@ -44,6 +45,10 @@ export default function Home() {
         
 
 <Recommededcars />
+<div className="w-full flex justify-center items-center mt-6">
+  <Link href="productcategory" className="border bg-[#3563E9] text-white p-4 rounded-lg">
+  <button>Show More Cars</button></Link>
+</div>
     <Footer />
 
     </>
