@@ -65,65 +65,8 @@ const page = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-10/12 md:w-1/3 bg-white">
-          <h3 className="leading-[30px] text-xl font-bold px-2 py-2">
-            Rental Summary
-          </h3>
-          <p className="font-medium leading-[21px] text-sm text-[#90A3BF] px-2">
-            Prices may change depending on the length of the rental and the
-            price of your rental car.
-          </p>
 
-          <div className="w-full flex">
-            <div>
-              <Image
-                src={"/images/View 1.png"}
-                alt="Product"
-                width={100}
-                height={100}
-                className="w-[120px] h-[120px] md:h-24 p-2"
-              />
-            </div>
-            <div>
-              <h2 className="font-bold leading-[48px] text-[32px]">
-                Nissan GT - R
-              </h2>
-              <div className="flex justify-around items-center w-full">
-                <MdOutlineStarPurple500 className="fill-amber-400" />
-                <MdOutlineStarPurple500 className="fill-amber-400" />
-                <MdOutlineStarPurple500 className="fill-amber-400" />
-                <MdOutlineStarPurple500 className="fill-amber-400" />
-                <MdOutlineStarBorderPurple500 />|
-                <p className="text-[#9F9F9F] fon-medium text-sm text-wrap">
-                  440+ Customer Review
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full p-4 flex justify-between items-center">
-              <span className="font-medium text-[#90A3BF] text-base leading-6">Subtotal</span>
-              <span>$80.00</span>
-            </div>
-
-            <div className="w-full p-4 flex justify-between items-center">
-              <span className="font-medium text-[#90A3BF] text-base leading-6">Tax</span>
-              <span>$0</span>
-            </div>
-
-            <div className="w-full p-4 flex justify-between items-center">
-              <div>
-            <h2 className="font-bold text-xl leading-[30px]">Total Rental Price</h2>
-              <span className="font-medium text-[#90A3BF] text-sm leading-6">Overall price and includes rental discount</span>
-              </div>
-              <h1 className="text-[32px] leading-[40.32px] font-bold">$80.00</h1>
-            </div>
-        </div>
-      </div>
-
-      <div className="w-full md:w-2/3 p-4 gap-2">
-        <div className="mt-4 bg-white">
+          <div className="mt-4 bg-white">
           <h3 className="leading-[30px] text-xl font-bold p-2">Rental Info</h3>
           <div className="w-full flex justify-between p-2">
             <h5 className="text-[#90A3BF] font-medium text-sm leading-[21px]">
@@ -317,6 +260,61 @@ const page = () => {
               <button>Rent Now</button>
             </Link>
           </div>
+        </div>
+        </div>
+        <div className="w-full md:w-1/3 bg-white mt-0 md:mt-[-1600px]">
+          <h3 className="leading-[30px] text-xl font-bold px-2 py-2">
+            Rental Summary
+          </h3>
+          <p className="font-medium leading-[21px] text-sm text-[#90A3BF] px-2">
+            Prices may change depending on the length of the rental and the
+            price of your rental car.
+          </p>
+
+          <div className="w-full flex">
+            <div>
+              <Image
+                src={"/images/View 1.png"}
+                alt="Product"
+                width={100}
+                height={100}
+                className="w-[120px] h-[120px] md:h-24 p-2"
+              />
+            </div>
+            <div>
+              <h2 className="font-bold leading-[48px] text-[32px]">
+                Nissan GT - R
+              </h2>
+              <div className="flex justify-around items-center w-full">
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarBorderPurple500 />|
+                <p className="text-[#9F9F9F] fon-medium text-sm text-wrap">
+                  440+ Customer Review
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full p-4 flex justify-between items-center">
+              <span className="font-medium text-[#90A3BF] text-base leading-6">Subtotal</span>
+              <span>$80.00</span>
+            </div>
+
+            <div className="w-full p-4 flex justify-between items-center">
+              <span className="font-medium text-[#90A3BF] text-base leading-6">Tax</span>
+              <span>$0</span>
+            </div>
+
+            <div className="w-full p-4 flex justify-between items-center">
+              <div>
+            <h2 className="font-bold text-xl leading-[30px]">Total Rental Price</h2>
+              <span className="font-medium text-[#90A3BF] text-sm leading-6">Overall price and includes rental discount</span>
+              </div>
+              <h1 className="text-[32px] leading-[40.32px] font-bold">$80.00</h1>
+            </div>
         </div>
       </div>
       <Footer />

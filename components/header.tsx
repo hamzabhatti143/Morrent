@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaSearch, FaBell, FaCog, FaHeart } from "react-icons/fa";
 import Image from "next/image"
+import Link from "next/link"
 const header = () => {
   return (
     <>
@@ -21,10 +22,14 @@ const header = () => {
       </div>
       <div className='w-full mt-4 md:mt-0 md:w-1/2 flex justify-center md:justify-end gap-6 items-center'>
       <button className=" text-gray-600 hover:text-blue-600">
+        <Link href="/dashboard">
             <FaHeart size={20} />
+            </Link>
           </button>
           <button className=" text-gray-600 hover:text-blue-600">
+          <Link href="/productcategory">
             <FaBell size={20} />
+            </Link>
             <span className=" h-2 w-2 rounded-full bg-red-500"></span>
           </button>
           <button className="text-gray-600 hover:text-blue-600">
