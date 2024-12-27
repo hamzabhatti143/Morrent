@@ -119,10 +119,69 @@ const page = () => {
       </div>
 
       <div className="w-full flex flex-col md:flex-row">
-        <div className="w-1/4 bg-white"></div>
+        <div className="w-1/4 bg-white border-r-2"></div>
         <div className="w-full md:w-3/4 p-4">
+          <div className="w-full bg-white mb-10 mt-0 md:mt-[-90px]">
+            <div className="flex items-center">
+              <h1 className="leading-[25.2px] font-semibold text-xl px-8 pt-4">Reviews</h1>
+              <p className="w-10 h-6 bg-[#3563E9] text-white text-center mt-3">13</p>
+            </div>
+        <div className="w-full p-4 flex gap-4">
+          <div>
+            <Image src={"/images/re1.svg"} alt="" width={40} height={40} className="rounded"/>
+          </div>
+          <div className="w-full">
+            <h4 className="font-bold text-xl leading-[30px]">Alex Stanton</h4>
+            <div className="w-full flex justify-between">
+              <p className="w-1/2 font-medium text-sm leading-[21px] text-[#90A3BF]">CEO at Bukalapak</p>
+              <div className="w-full">
+                <p className="flex justify-end">21 July 2022</p>
+                <div className="w-full flex justify-end">
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarBorderPurple500 />
+                </div>
+              </div>
+            </div>
+                <p className="text-[#596780] leading-[28px] text-sm text-justify">We are very happy with the service from the MORENT App. Morent has a low price and 
+                  also a large variety of cars with good and comfortable facilities. In addition, the 
+                  service provided by the officers is also very friendly and very polite.</p>
+          </div>
+        </div>
+        <div className="w-full p-4 flex gap-4">
+          <div>
+            <Image src={"/images/re2.svg"} alt="" width={40} height={40} className="rounded"/>
+          </div>
+          <div className="w-full">
+            <h4 className="font-bold text-xl leading-[30px]">Skylar Dias</h4>
+            <div className="w-full flex justify-between">
+              <p className="w-1/2 font-medium text-sm leading-[21px] text-[#90A3BF]">CEO at Amazon</p>
+              <div className="w-full">
+                <p className="flex justify-end">20 July 2022</p>
+                <div className="w-full flex justify-end">
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarPurple500 className="fill-amber-400" />
+                <MdOutlineStarBorderPurple500 />
+                </div>
+              </div>
+            </div>
+                <p className="text-[#596780] leading-[28px] text-sm text-justify">We are very happy with the service from the MORENT App. Morent has a low price and 
+                  also a large variety of cars with good and comfortable facilities. In addition, the 
+                  service provided by the officers is also very friendly and very polite.</p>
+          </div>
+        </div>
+
+        </div>
+        <div className="w-full">
+        
           <Categorycard />
         </div>
+        </div>
+        
       </div>
       <Footer />
     </>
